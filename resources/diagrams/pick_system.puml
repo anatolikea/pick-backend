@@ -1,0 +1,7 @@
+@startuml "pick_system"
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+!include pick_components.puml
+!include pick_relations.puml
+
+@enduml

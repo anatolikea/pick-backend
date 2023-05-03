@@ -1,0 +1,10 @@
+@startuml "pick_components"
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+System_Boundary(pick_system, "[[Order picking]]") {
+    Container(pick_backend, "Pick backend", "Java", "Manages pick tasks", $sprite="java")
+    ContainerDb(pick_db, "Pick Database", "Postgres", "", $sprite="postgresql")
+    ContainerDb(pick_cache, "Article information cache", "Redis", "", $sprite="redis")
+}
+
+@enduml

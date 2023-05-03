@@ -1,0 +1,7 @@
+@startuml "pick_relations"
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+Rel(pick_backend, pick_db, "Stores information for pickning")
+Rel(pick_backend, pick_cache, "Stores cache of article information")
+
+@enduml
